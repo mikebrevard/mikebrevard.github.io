@@ -1,0 +1,83 @@
+/* CSS Document */
+@import url(foundation.css);
+@import url(lightbox.min.css);
+body {
+  background-color: #f0f0f0; }
+
+a:link, a:active, a:visited {
+  color: #F9A479;
+  font-weight: 500; }
+
+a:hover {
+  color: #F9A00d; }
+
+ul.tree li.folder:before {
+  content: "\f114";
+  font-family: "FontAwesome";
+  padding-right: 10px; }
+
+.outer-wrapper {
+  width: 100%;
+  overflow-x: hidden; }
+
+.sidebar {
+  width: 260px;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+  height: 100%; }
+  .sidebar .logo img {
+    display: inline-block;
+    max-width: 100px;
+    margin-left: 10px; }
+  .sidebar ul.tabs {
+    overflow-y: auto;
+    max-height: 550px;
+    border: none; }
+    .sidebar ul.tabs li.heading {
+      padding: 14px 0 4px 30px;
+      font-size: 14px;
+      color: #808080; }
+    .sidebar ul.tabs li a {
+      padding: 7px 30px;
+      font-size: 16px; }
+    .sidebar ul.tabs li.is-active a {
+      background-color: #f0f0f0;
+      color: #565656;
+      padding: 14px 0;
+      padding-left: 40px; }
+
+.main-content {
+  width: 100%;
+  position: relative;
+  background-color: #f0f0f0;
+  z-index: 1;
+  padding: 0 120px;
+  padding-left: 380px;
+  color: #343434; }
+  .main-content.tabs-content {
+    border: 0; }
+  .main-content section {
+    min-height: 600px;
+    height: auto !important;
+    padding: 0 0 100px; }
+    .main-content section h1 {
+      padding-top: 120px; }
+    .main-content section h4 {
+      padding: 80px 0 0; }
+    .main-content section .row.nogutter {
+      margin: 0 -0.625rem; }
+    .main-content section .card {
+      padding: 10px; }
+
+footer {
+  position: fixed;
+  width: 260px;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  text-align: left;
+  font-size: 11px;
+  padding: 10px 30px; }

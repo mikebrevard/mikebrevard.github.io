@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pawiwahan - wedding template</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pawiwahan-Wedding HTML5 Template - Documentation">
+    <meta name="author" content="Goalabs">
+    <!--load google/external fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Slab:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/prism.css">
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <div class="sidebar">
+        <a href="" class="logo">
+          <img src="images/logo.png" attr="Logo Goalabs" />
+        </a>
+        <ul class="vertical tabs" data-tabs id="doc" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500">
+          <li class="tabs-title is-active"><a href="#introduction">Introduction</a></li>
+          <li class="heading">Getting Started</li>
+          <li class="tabs-title"><a href="#files-dir">Files & Directories</a></li>
+          <li class="tabs-title"><a href="#structure">Structure</a></li>
+          <li class="heading">Using theme styling</li>
+          <li class="tabs-title"><a href="#how-to-change-welcome-screen">Change welcome screen</a></li>
+          <li class="tabs-title"><a href="#how-to-custom-paralax-divider">Custom paralax divider</a></li>
+          <li class="tabs-title"><a href="#how-to-add-carousel">How to add owl-carousel</a></li>
+          <li class="tabs-title"><a href="#how-to-manage-timeline">Manage timeline/history</a></li>
+          <li class="tabs-title"><a href="#how-to-change-countdown">Change countdown timer</a></li>
+          <li class="tabs-title"><a href="#how-to-use-blog">Using blog section</a></li>
+          <li class="tabs-title"><a href="#how-to-rsvp-form">Manage RSVP form</a></li>
+          <li class="tabs-title"><a href="#how-to-manage-gallery-section">Manage gallery section</a></li>
+          <li class="tabs-title"><a href="#how-to-configure-gmaps">Configuring Google Maps Coordinates</a></li>
+          <li class="tabs-title"><a href="#how-to-cheatsheet-styling">Cheatsheet styling</a></li>
+          <!-- <li><a href="#"></a></li> -->
+          <li class="tabs-title"><a href="#credits">Credits</a></li>
+        </ul>
+      </div>
+      <div class="main-content tabs-content" data-tabs-content="doc">
+        <section class="tabs-panel is-active" id="introduction">
+          <h1>Pawiwahan <small>v.1</small></h1>
+          <blockquote>
+            Wedding HTML template
+            <cite>Handcrafted by <a href="https://bit.ly/goalabs">Goalabs</a></cite>
+          </blockquote>
+          <dl>
+            <dt>Created:</dt>
+            <dd>30 Juni 2017</dd>
+            <dt>Latest update:</dt>
+            <dd>30 Juni 2017</dd>
+            <dt>email:</dt>
+            <dd>goatheme@gmail.com</dd>
+          </dl>
+        </section>
+
+        <section class="tabs-panel" id="files-dir">
+          <h4>Files & Directories</h4>
+          <p>HTML Files included</p>
+          <ul class="no-bullet tree">
+            <li class="folder">fonts</li>
+            <li class="folder">images</li>
+            <li class="folder">php</li>
+            <li class="folder">scripts</li>
+            <li class="folder">styles</li>
+            <li>index.html <i class="fa fa-angle-right"></i> Variant 1</li>
+            <li>index2.html <i class="fa fa-angle-right"></i> Variant 2</li>
+            <li>index3.html <i class="fa fa-angle-right"></i> Variant 3</li>
+            <li>index4.html <i class="fa fa-angle-right"></i> Variant 4</li>
+          </ul>
+        </section>
+
+        <section class="tabs-panel" id="structure">
+          <h4>Structure</h4>
+          <p>Pawiwahan has a well-commented to easily understand.</p>
+          <ul>
+            <li><code>< head ></code> area which contains the meta tags and load a bunch of css files</li>
+            <li><code>< body ></code> the whole body content such as <code>< header ></code>, <code>< section ></code> & <code>< footer ></code></li>
+            <li><code>< header ></code> area which contains menu and logo</li>
+            <li><code>< section ></code> each section will contain main content for website</li>
+            <li><code>< footer ></code> end of website which contains social links and end-quote/copyrights</li>
+          </ul>
+          <hr />
+          <h5>HTML Structure</h5>
+          <p>These code below are basic html markup structure</p>
+          <pre class="language-markup" data-src="highlight/html-structure.html"></pre>
+          <hr />
+          <h5>CSS Structure</h5>
+          <ol>
+            <li><b>foundation.css</b> <i class="fa fa-angle-right"></i> zurb foundation (flex grid) css framework</li>
+            <li><b>main.css</b> <i class="fa fa-angle-right"></i> Main CSS style file</li>
+            <li><b>lightbox.min.css</b> <i class="fa fa-angle-right"></i> Lightbox style css plugin</li>
+            <li><b>owl.carousel.min.css</b> <i class="fa fa-angle-right"></i> Owl carousel css plugin</li>
+            <li><b>linearicons.css</b> <i class="fa fa-angle-right"></i> linearicons font icon css</li>
+            <li><b>responsive.css</b> <i class="fa fa-angle-right"></i> responsive css for mobile friendly styling</li>
+          </ol>
+          <hr />
+          <h5>Javascript</h5>
+          <ol>
+            <li><b>what-input.js</b> <i class="fa fa-angle-right"></i> see more documentation <a href="https://github.com/ten1seven/what-input" target="_blank">here</a> </li>
+            <li><b>foundation.js</b> <i class="fa fa-angle-right"></i> all foundation plugin included</li>
+            <li><b>jquery.countdown.min.js</b> <i class="fa fa-angle-right"></i> Countdown javascript with jquery library</li>
+            <li><b>lightbox.min.js</b> <i class="fa fa-angle-right"></i> Lightbox javascript plugin</li>
+            <li><b>owl.carousel.min.js</b> <i class="fa fa-angle-right"></i> Owl Carousel javascript plugin</li>
+            <li><b>skrollr.min.js</b> <i class="fa fa-angle-right"></i> Skrollr paralax javascript plugin</li>
+            <li><b>shuffle.min.js</b> <i class="fa fa-angle-right"></i> shuffle.js is content filtering javascript plugin</li>
+            <li><b>app.js</b> <i class="fa fa-angle-right"></i> handle plugin init and custom js</li>
+          </ol>
+        </section>
+
+        <section class="tabs-panel" id="how-to-change-welcome-screen">
+          <h4>How to change welcome screen</h4>
+          <p>Adjust this section as expected, We will highlight the code you need</p>
+          <pre class="language-markup" data-src="highlight/welcome-screen.html"></pre>
+          <h5>Edit basic welcome screen</h5>
+          <ol>
+            <li>Background Image
+              <p>First thing first, you need to change the background <code>style="background-image:url(images/welcome-screen/welcome1.jpg);"</code> at section tag.</p>
+              <p>You can locate your images in this path <code>images/welcome-screen/yourfile.jpg</code> (just to well-organized)</p>
+            </li>
+            <li>Headline Message
+              <p>Simple change text inside class headline <code>< div class="headline" >We're Getting Maried< /div ></code> as you need, be sure to check, it just fit with 3 words</p>
+            </li>
+            <li>Couple Names
+              <p><code>< h2 class="show-for-sr" > Suandi & Nanik are getting married < /h2 ></code><br />change that line code match you need, its just a robot thing so browser can read semantic HTML (it won't show on browser rendering)</p>
+              <p><code>< div class="center" >< div class="left" >Suandi< /div >&< div class="right" >Nanik< /div >< /div ></code><br />Change couple name as you desired</p>
+            </li>
+            <li>last thing, Footer Line Message
+              <p><code>< div class="footline" > 2018 / MAR / 26 < /div ></code><br />
+              Match your wedding day.
+              </p>
+            </li>
+            <h5>Add background with carousel</h5>
+            <p>You need to add class <code>.with-carousel</code> to <code>div#top</code> if you want to add carousel as a background welcome screen, also you need to add couple of lines before <code>div.column</code>: </p>
+            <pre class="language-markup" data-src="highlight/welcome-screen-carousel.html"></pre>
+            <h5>Add background with self-hosted video</h5>
+            <p>You need to add class <code>.with-video</code> to <code>div#top</code> if you want to add self-hosted video/youtube/vimeo, and add couple lines:</p>
+            <pre class="language-markup" data-src="highlight/welcome-screen-selfhosted-video.html"></pre>
+            <h5>Add background with youtube embed video</h5>
+            <p>Same as add self-hosted video but embed code is a bit different:</p>
+            <pre class="language-markup" data-src="highlight/welcome-screen-youtube.html"></pre>
+            <h5>Add background with vimeo embed video</h5>
+            <pre class="language-markup" data-src="highlight/welcome-screen-vimeo.html"></pre>
+          </ol>
+        </section>
+
+        <section class="tabs-panel" id="how-to-custom-paralax-divider">
+          <h4>How to custom paralax divider</h4>
+          <p>There are 4 available variant for paralax divider</p>
+          <div class="row nogutter">
+            <div class="column card"><img src="images/pinetrees-cloudy.jpg" alt="Pine trees Cloudy">Pine trees Cloudy<br />
+              <code>.pinetrees-cloudy</code>
+            </div>
+            <div class="column card"><img src="images/pinetrees-flat.jpg" alt="Pine trees with flat style"> Pine trees with flat style<br />
+              <code>.pinetrees-flat</code>
+            </div>
+            <div class="column card"><img src="images/mountain.jpg" alt="Mountain"> Mountain<br />
+              <code>.mountain</code>
+            </div>
+            <div class="column card"><img src="images/beach.jpg" alt="Beach"> Beach<br />
+              <code>.beach</code>
+            </div>
+          </div>
+          <hr />
+          <p>Focus on this line code: <code>< section id="the-couple" class="row expanded couple custom-paralax pinetrees-flat" ></code>, add variant class after this <code>.custom-paralax</code> class. (Ignore the rest)</p>
+          <pre class="language-markup" data-src="highlight/paralax-divider-variant.html"></pre>
+          <p>They will work very well according to the background conditions of the photo on the <a href="#how-to-change-welcome-screen">welcome-screen</a></p>
+        </section>
+
+        <section class="tabs-panel" id="how-to-add-carousel">
+          <h4>How to add carousel using owl-carousel plugin</h4>
+          <p>With this great carousel plugin, we can make beautiful and easy to use at the same time</p>
+          <pre class="language-markup" data-src="highlight/owl-carousel.html"></pre>
+          <p>You just need to navigate the <code>src=""</code> to your file and fill <code>alt=""</code>, and leave the rest.</p>
+          <p>If you want to add more items, simply copy-paste following code</p>
+          <pre class="language-markup" data-src="highlight/owl-carousel-each.html"></pre>
+        </section>
+
+        <section class="tabs-panel" id="how-to-manage-timeline">
+          <h4>How to manage timeline/history section</h4>
+          <p>This is one of unique section, you need more attention to manage this one, so please take a look at code below:</p>
+          <pre class="language-markup" data-src="highlight/timeline-history.html"></pre>
+          <p>This section has class called <code>natural-white-texture</code>, it can be used for other too.</p>
+          <p>Lets focus on each list:</p>
+          <pre class="language-markup" data-src="highlight/each-timeline-history.html"></pre>
+          <p>All you need to do just replace text and image as you desired, to add more list history, simply copy-paste those line of code.</p>
+          <hr />
+          <h5>*EXTRAS <small>Add wobbly effect</small></h5>
+          <p><code>< ul class="story" ></code></p>
+          <p>add class <code>wobbly</code> to <code>ul</code>, it should look like this: </p>
+          <p><code>< ul class="story wobbly" ></code></p>
+          <p>Thats it! refresh and check what happens with your timeline/history section.</p>
+        </section>
+
+        <section class="tabs-panel" id="how-to-change-countdown">
+          <h4>How to change countdown timer</h4>
+          <p>This is a basic element that wedding website should have, we are using plugin from jquery countdown.</p>
+          <pre class="language-markup" data-src="highlight/countdown-markup.html"></pre>
+          <p>Make sure you have <code>.time-countdown</code> class on <code>section</code> to activate time-counter styling.</p>
+          <p>Focus on <code>< div class="row counter" id="getting-started" data-end-date="2018/03/26" >< /div ></code> simply change 2018/03/26 with the same format (YYYY/MM/DD).</p>
+        </section>
+
+        <section class="tabs-panel" id="how-to-use-blog">
+          <h4>How to use blog section</h4>
+          <p>We have blog-post-section too</p>
+          <pre class="language-markup" data-src="highlight/blogpost.html"></pre>
+          <p>Just like the others, change/copy-paste content inside <code>< !-- eachpost 1 start -- ></code>  comments</p>
+        </section>
+
+        <section class="tabs-panel" id="how-to-rsvp-form">
+          <h4>How to manage RSVP form</h4>
+          <p>To understand how this section works, you need a little bit knowledge about *.php</p>
+          <h5>HTML</h5>
+          <pre class="language-markup" data-src="highlight/rsvp-form-markup.html"></pre>
+          <p>Take a look at this: <code>< form id="submit-rsvp" data-abide novalidate ></code>, this form should have <code>data-abide</code> & <code>novalidate</code> to init the foundation built-in function and deactivate old-browser form-validation</p>
+          <p>You can see full documentation about how Foundation Abide form validation works <a href="http://foundation.zurb.com/sites/docs/abide.html">here</a></p>
+          <p>but don't worry, if you see this page you must be have license + free ticket, we will get you out of your problem. :D</p>
+          <hr />
+          <h5>PHP</h5>
+          <pre class="language-php" data-src="highlight/mailer.php"></pre>
+          <p>These are basic php code to send mail to recipient that we have to set, all you need to do just edit this <code>$recipient = "yourmail@example.com";</code> with your valid email.</p>
+        </section>
+
+        <section class="tabs-panel" id="how-to-manage-gallery-section">
+          <h4>How to manage gallery section</h4>
+          <p>To make galleries more beautiful we add javascript filtering plugin called <a href="https://vestride.github.io/Shuffle/">Shuffle.js</a> & <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox 2</a> to call a lightbox</p>
+          <pre class="language-markup" data-src="highlight/shuffle-markup.html"></pre>
+          <p>Just focus on these 2 <code>div</code>: </p>
+          <h5>Filter:</h5>
+          <pre class="language-markup" data-src="highlight/shuffle-markup-filter.html"></pre>
+          <p>You can add more filter as you want by add <code>< li class="" data-group="spots" >Spots< /li ></code>, just keep in mind what you add inside <code>data-group</code> beacuse we will use it later.</p>
+          <h5>Gallery items:</h5>
+          <pre class="language-markup" data-src="highlight/shuffle-markup-items.html"></pre>
+          <p>After adding some filter you need, now you can add more items by duplicate code above.</p>
+          <p>Some code you need to give more attention :</p>
+          <ul>
+            <li><code>data-groups</code> : to filter out your galleries</li>
+            <li><code>< a href="images/content/28.jpg" data-lightbox="gallery" data-title="The rings" ></code> Change image location and <code>data-title</code> to show image larger by using lightbox plugin.</li>
+            <li><code>< img src="images/content/21-square.jpg" alt="" ></code> Change your thumbnail image </li>
+            <li><code>< div class="label" >Just Married!< /div ></code> Change as you need</li>
+          </ul>
+
+        </section>
+
+        <section class="tabs-panel" id="how-to-configure-gmaps">
+          <h4>How to configuring Google Maps Coordinates</h4>
+          <p>Don't forget to give map of your ceremonial location</p>
+          <h5>index.html</h5>
+          <p>You can change telephone number, address street line and email. Just leave the rest</p>
+          <pre class="language-markup" data-src="highlight/gmaps.html"></pre>
+          <p>Make sure you have <code>< div id="map" >< /div ></code> this is a placeholder to render the map, also you can set your latitude, longitude & title marker through data attributes <code>data-lat="-8.1037781"</code>, <code>data-long="115.0890078"</code> and <code>data-title="My wedding here!"</code> match yours.</p>
+          <p>Also since google update to v.3.0 you need to make your own API to put at bottom of page</p>
+          <p><code>< script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap" >< /script ></code></p>
+          <p>Full Step by step to get <a target="_blank" href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map">Google API</a></p>
+        </section>
+
+        <section class="tabs-panel" id="how-to-cheatsheet-styling">
+          <h4>Cheatsheet styling</h4>
+          <p>There are many type that we have already added as special styling section</p>
+          <hr />
+          <h5>Section styling</h5>
+          <p>You can add these class to section, it works by manipulating <code>:before</code> and/or <code>:after</code> style</p>
+          <ol>
+            <li><code>.natural-white-texture</code></li>
+            <li><code>.asanoha</code></li>
+            <li><code>.smooth-waves</code></li>
+            <li><code>.custom-paralax</code> Full explanation <a href="#how-to-custom-paralax-divider">here</a></li>
+          </ol>
+          <hr />
+          <h5>Background overlay</h5>
+          <p>By have this <code>< div class="bg-overlay bg-overlay-ellipse" >< div class="ellipse-line" >< /div >< /div ></code> markup inside section, the whole section will cover by overlay layer and dont forget to have <code>div.column</code> after <code>div.bg-overlay</code>, so it should look like this:</p>
+          <pre class="language-markup" data-src="highlight/bg-overlay.html"></pre>
+          <p>here is bunch of list class</p>
+          <ol>
+            <li><code>.bg-overlay-heart</code> Used in countdown timer, can be added with <code>.animated.wobble_bg</code> to add wobbly background effect</li>
+            <li><code>.bg-overlay-dark</code> Used in countdown timer</li>
+            <li><code>.bg-overlay-light</code></li>
+            <li><code>.bg-overlay-dark-green</code> Used in footer</li>
+            <li><code>.bg-overlay-ellipse</code> Used in RSVP form</li>
+          </ol>
+          <p>these works basically by put <code>div</code> with special class we mention above and put it below <code>< div class="column" > ... < /div ></code>.</p>
+        </section>
+
+        <section class="tabs-panel" id="credits">
+          <h4>Credits</h4>
+          <ul>
+            <li>Zurb Foundation CSS Framework</li>
+            <li>Jquery</li>
+            <li>Font Awesome</li>
+            <li>Shuffle.js</li>
+            <li>Lightbox 2</li>
+            <li>Owl Carousel</li>
+            <li>Skrollr</li>
+          </ul>
+        </section>
+      </div>
+
+      <footer><a href="https://bit.ly/goalabs">Goalabs</a> <i class="fa fa-copyright"></i> 2017 </footer>
+    </div>
+
+    <!--js files -->
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/vendor/what-input.js"></script>
+    <script type="text/javascript" src="scripts/vendor/foundation.js"></script>
+    <script type="text/javascript" src="scripts/lightbox.min.js"></script>
+    <script type="text/javascript" src="scripts/prism.js"></script>
+    <script>$(document).foundation();</script>
+
+  </body>
+</html>
