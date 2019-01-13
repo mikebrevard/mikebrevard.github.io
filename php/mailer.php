@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Build the email headers.
     $email_headers = "From: $name <$email>".
-    'Reply-To: mikeandcelete2019@gmail.com' . "\r\n" .
+    'Reply-To: yourmail@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
     // send
