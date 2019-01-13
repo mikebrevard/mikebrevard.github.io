@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content = "Name: $name\n";
     $email_content .= "Phone: $phone\n\n";
     $email_content .= "Email: $email\n\n";
-    $email_content .= "Message:\n$message\n";
+    $email_content .= "Message:\n$message\n";s
 
     // Build the email headers.
     $email_headers = "From: $name <$email>".
-    'Reply-To: yourmail@example.com' . "\r\n" .
+    'Reply-To: mikeandcelete2019@gmail.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
     // send
