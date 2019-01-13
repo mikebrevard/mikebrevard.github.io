@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
-    $recipient = "yourmail@example.com";
+    $recipient = "mikeandceleste2019@gmail.com";
 
     // Set the email subject.
     $subject = "We are attending ( $name )";
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content = "Name: $name\n";
     $email_content .= "Phone: $phone\n\n";
     $email_content .= "Email: $email\n\n";
-    $email_content .= "Message:\n$message\n";s
+    $email_content .= "Message:\n$message\n";
 
     // Build the email headers.
     $email_headers = "From: $name <$email>".
