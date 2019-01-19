@@ -1,10 +1,10 @@
 // global loadout
-// init foundation plugin 
+// init foundation plugin
 $(document).ready(function() {
   $(document).foundation();
 });
 
-// menu offcanvas trigger 
+// menu offcanvas trigger
 var $hamburger = $(".hamburger");
 $hamburger.on("click", function(e) {
   $hamburger.toggleClass("is-active");
@@ -17,11 +17,11 @@ $(".welcome-screen").height($height_window)
 //sticky header and menu
 $(window).scroll(function(){
    var scrollAmt = $(this).scrollTop();
-   if(scrollAmt > $height_window) { 
+   if(scrollAmt > $height_window) {
      $(".title-bar").addClass("fixed");
    } else {
      $(".title-bar").removeClass("fixed");
-   }   
+   }
 });
 
 // smooth scroll anchor
@@ -110,7 +110,7 @@ $(".timeline").ready(function(){ //realigning the arrow per list item
   })
 })
 
-// redeclare data paralax for timeline/automatic calculate height content 
+// redeclare data paralax for timeline/automatic calculate height content
 var $timeline = $(".timeline-wrapper");
 $timeline.ready(function(){
   var lengthList = $timeline.find("ul.story li").length;
@@ -139,7 +139,7 @@ if($(window).width()>768)
       skrollr.init({
           forceHeight: false
       });
-    }); 
+    });
   // }
 }
 /* END - init paralax with skroll plugin */
@@ -176,11 +176,11 @@ function initMap() {
         },
         fullscreenControl: true,
         scrollwheel: false,
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
       };
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
     // Create the Google Map using our element and options defined above
@@ -228,9 +228,9 @@ $submit_form.submit( function() {
 
         if(response=='success')
           $submit_form.find(".greetings").addClass("reveal");
-        else 
+        else
           $submit_form.find("button").text("SUBMIT");
-        
+
       }
 
     });
@@ -279,18 +279,18 @@ if (vimeo_muted !== null && vimeo_muted.length !== null){
   var vi_endpoint = 'http://www.vimeo.com/api/oembed.json';
   var vi_callback = 'embedVideo';
   var vi_url = vi_endpoint + '?url=' + encodeURIComponent(vi_videoUrl) + '&autoplay=true' + '&callback=' + vi_callback + '&width=420';
-  
+
   function embedVideo(video) {
     var vi_div = vimeo_muted;
     vi_div.innerHTML = unescape(video.html);
-  
+
     var vi_ifr = vi_div.firstChild;
     vi_ifr.addEventListener('load', function(e) {
       var vi_player = $f(vi_ifr);
       vi_player.api('setVolume', 0);
     });
   }
-  
+
   function vi_vimeoInit() {
     var vi_js = document.createElement('script');
     vi_js.src = vi_url;

@@ -12,24 +12,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set the recipient email address
     $recipient = "mikeandceleste2019@gmail.com, $email";
 
-    // Set the email subject.
-    $subject = "Confirmation: $name is attending Mike and Celeste's Wedding!";
+    $subject = "TODO";
+    $email_content = "TODO";
+    $signature = "\r\n\r\nBest Wishes,\r\n\r\nMike and Celeste";
 
-    $email_content = "Thank you for being able to attend Celete and I's Wedding!\n";
-    $email_content .= "An additional e-mail will be sent to $email regarding information on hotel information and food options for the event\n";
-    $email_content .= "Below is the information from the form:\n";
-    $email_content .= "<b>Name</b>: "
-    $email_content .= $name;
-    $email_content .= "\n<b>Phone</b>: "
-    $email_content .= $phone;
-    $email_content .= "\n<b>E-mail</b>: "
-    $email_content .= $email;
-    $email_content .= "\n<b>Number of Guests</b>: "
-    $email_content .= $attendance;
-    $email_content .= "\n<b>Message</b>: "
-    $email_content .= $messages;
-    $email_content .= "\nBest,";
-    $email_content .= "\tMike";
+    if (startsWith($attendance,"Yes")) {
+      $subject = "$name is attending Mike and Celeste's Wedding!";
+      $email_content = "Thank you for filling out the form on our site. We're excited that you'll be able to attend! We will send out an e-mail regarding hotel information and the dinner options for the event in the coming days. This is a summary of the information you provided in the form. $name will be attending with $guest guests. Their contact information is $phone and $email. They also mentioned that '$messages'$signature";
+    } else {
+      if (startsWith($attendance,"Yes")) {
+        $subject = "$name will not be able to attend Mike and Celeste's Wedding! =(";
+        $email_content = "Thank you for filling out the form on our site. We're sad to hear you won't be able to attend our wedding. If your plans change, please let us know before March 20th.$signature";
+      }
+    }
 
     if (mail($recipient, $subject, $email_content)) {
       die("success");
