@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $subject = "TODO";
     $email_content = "TODO";
-    $signature = "\r\n\r\nBest Wishes,\r\nMike and Celeste";
+    $signature = "\r\n\r\nBest Wishes,\r\n\r\nMike and Celeste";
 
     if (substr($attendance, 0, 3) === "Yes") {
       $subject = "$name is attending Mike and Celeste's Wedding!";
