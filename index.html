@@ -355,15 +355,15 @@
                   <label>
                     <input type="text" name="name" placeholder="Name" required>
                     <span class="form-error">
-                      We need to know who this is
+                      What's your name?
                     </span>
                   </label>
                 </div>
                 <div class="column small-12 medium-4">
                   <label>
-                    <input type="text" name="phone" placeholder="Phone Number" pattern="number" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
                     <span class="form-error">
-                      Can we have a phone-number that is best to reach you. Enter your phone-number with digits only
+                      What's your phone number?
                     </span>
                   </label>
                 </div>
@@ -371,13 +371,13 @@
                   <label>
                     <input type="email" name="email" placeholder="Email Address" pattern="email" required>
                     <span class="form-error">
-                      We'll use your e-mail as the primary way to contact you
+                      What's your e-mail?
                     </span>
                   </label>
                 </div>
               </div>
               <div class="row">
-                <div class="column small-12 large-9 checkbox-group" data-validator-min="1">
+                <div class="column small-12 large-4 checkbox-group" data-validator-min="1">
                   <legend>Attendance</legend>
                   <select required name="attendance">
                     <option value="">Can you attend the wedding?</option>
@@ -385,10 +385,10 @@
                     <option>No, sadly I can't make the wedding =(</option>
                   </select>
                   <span class="form-error">
-                    We need to know whether you'll be able to make our special day
+                    Can you attend?
                   </span>
                 </div>
-                <div class="column small-12 large-3">
+                <div class="column small-12 large-4">
                   <legend>Guests</legend>
                   <select required name="guest">
                     <option value="">Number of guests</option>
@@ -400,10 +400,25 @@
                     Are you going to bring a guest?
                   </span>
                 </div>
+                <div class="column small-12 large-4">
+                  <legend>Children (8 and younger)</legend>
+                  <select required name="children">
+                    <option value="">Number of children</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2 or more</option>
+                  </select>
+                  <span class="form-error">
+                    Are you going to bring any children?
+                  </span>
+                </div>
               </div>
               <div class="row">
                 <div class="column">
-                  <textarea name="messages" placeholder="Any additional comments you want to mention? If you're bringing any children, please specify here their ages. Thank you the help"></textarea>
+                  <textarea name="messages" required placeholder="Guest's name and/or any additional comments"></textarea>
+                  <span class="form-error">
+                    Can you provide your guests' names? If you have no guests just write a nice message =)
+                  </span>
                 </div>
               </div>
               <div class="row text-center">
